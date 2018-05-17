@@ -5,12 +5,13 @@ var cors = require('cors');
 
 const routes = require('./routes');
 app.use(cors());
+// add your cors options here
 // var corsOptions = {
 //     origin: 'http://localhost:8080',
 //     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 //   }
 
 app.use('/', routes);
-var server = app.listen(process.env.PORT, function(){
+var server = app.listen(process.env.PORT, function() {
     console.log('server started at ' + server.address().port);
 });
