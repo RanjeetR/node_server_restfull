@@ -4,7 +4,7 @@ const products = require('./products');
 routes.use('/products', products);
 
 routes.get('/', (req, res) => {
-  res.status(200).json({ message: 'Connected!' });
+  res.status(200).json({ message: 'Connected! Test google cloud ....' });
 });
 
 module.exports = routes;
