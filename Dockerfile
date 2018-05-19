@@ -1,4 +1,4 @@
-FROM node:launcher.gcr.io/google/nodejs
+FROM launcher.gcr.io/google/nodejs
 
 # Create app directory
 WORKDIR /usr/src/app
