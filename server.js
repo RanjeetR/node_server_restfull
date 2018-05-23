@@ -1,9 +1,8 @@
-var express = require('express');
-var app = express();
-var fs = require('fs');
-var cors = require('cors');
-
-const routes = require('./routes');
+import express from 'express';
+const app = express();
+import fs from 'fs';
+import cors from 'cors';
+import routes from './routes';
 app.use(cors());
 // add your cors options here
 // var corsOptions = {
@@ -12,6 +11,6 @@ app.use(cors());
 //   }
 
 app.use('/', routes);
-var server = app.listen(process.env.PORT, function() {
-    console.log('server started at ' + server.address().port);
+const server = app.listen(process.env.PORT || 8086 , () => {
+    console.log(`server started at ${server.address().port}`);
 });
