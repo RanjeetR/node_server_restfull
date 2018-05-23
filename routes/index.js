@@ -6,7 +6,7 @@ routes.use('/products', products);
 routes.use('/user',users)
 
 routes.get('/', (req, res) => {
-  res.status(200).json({ message: 'Connected!' });
+  res.status(200).json({ message: 'Connected! Test google cloud ....' });
 });
 
 export default routes;
